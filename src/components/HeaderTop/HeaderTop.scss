@@ -1,0 +1,57 @@
+.HeaderTop {
+    padding: 20px 0;
+
+    select, option {
+        font-family: "Proxima Nova Rg";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 24px;
+        color: #262626;
+        border: none;
+        outline: none;
+        margin-right: 15px;
+    }
+
+    &-user {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        font-family: "Proxima Nova Rg";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+        color: #262626;
+        margin-left: 35px;
+
+        &:last-child {
+            margin-left: 0;
+            width: 30%;
+        }
+
+        svg {
+            margin-right: 15px;
+        }
+
+        input {
+            border: none;
+            outline: none;
+            width: 20%;
+            margin: 0 15px 0 35px;
+            font-family: "Proxima Nova Rg";
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 24px;
+
+            color: #262626;
+
+            opacity: 0.5;
+        }
+    }
+
+    .shoppingIcon {
+        margin: 0 35px;
+    }
+}

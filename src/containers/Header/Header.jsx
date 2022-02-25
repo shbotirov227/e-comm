@@ -1,10 +1,13 @@
 import React from "react";
+import HeaderTop from "../../components/HeaderTop/HeaderTop";
 
 import "./Header.scss";
 
 const Header = () => {
     return (
-        <h1>Hello</h1>
+        <div className="Header">
+           <HeaderTop />
+        </div>
     )
 }
 
