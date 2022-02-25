@@ -1,0 +1,33 @@
+.HeaderBottom {
+    padding: 25px 0;
+
+    &-logo {
+        display: flex;
+        align-items: center;
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 27px;
+        color: #22262A;
+
+        svg {
+            margin-right: 10px;
+        }
+    }
+    
+    &-link {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+        color: #262626;
+        margin-left: 100px;
+        transition: all ease 0.4s;
+
+        &:hover {
+            color: #40BFFF;
+        }
+    }
+}

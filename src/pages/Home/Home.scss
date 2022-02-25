@@ -1,3 +1,23 @@
 .Home {
-    
+    box-sizing: border-box;
+
+    .saleSection {
+        background-image: url("../../assets/images/saleSectionBg.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin-bottom: 330px;
+
+        &-title {
+            width: 40%;
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: bold;
+            font-size: 64px;
+            line-height: 150%;
+            letter-spacing: 0.5px;
+            color: #FFFFFF;
+            padding: 260px 0 200px 0;
+        }
+    }
 }
