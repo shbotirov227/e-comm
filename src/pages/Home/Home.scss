@@ -7,7 +7,7 @@
         background-position: center;
         background-size: cover;
         margin-bottom: 330px;
-
+        
         &-title {
             width: 40%;
             font-family: "Poppins";
@@ -18,6 +18,35 @@
             letter-spacing: 0.5px;
             color: #FFFFFF;
             padding: 260px 0 200px 0;
+        }
+        
+        &-cards {
+            position: relative;
+            top: 150px;
+            margin-bottom: 65px;
+        }
+    }
+
+    .cardsSection {
+        &-title {
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 35px;
+            line-height: 52px;
+            color: #22262A;
+            margin-bottom: 25px;
+        }
+        
+        .tabs {
+            margin: 30px 0;
+
+            .HeaderBottom-link {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 22px !important;
+                line-height: 33px;
+            }
         }
     }
 }

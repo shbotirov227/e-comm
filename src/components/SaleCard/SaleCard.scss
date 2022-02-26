@@ -1,15 +1,26 @@
 .SaleCard {
-    width: 30%;
-    background-color: #F6F7F8;
-    background-image: url("../../assets/images/saleCardBg1.png");
-    background-repeat: no-repeat;
-    padding: 30px 50px;
-    box-sizing: border-box;
-    height: 300px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
+    width: 415px;
+    height: 360px;
+    background-color: #F6F7F8;
+    background-repeat: no-repeat;
+    padding: 30px 50px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    overflow: hidden;
+
+    &:first-child {
+        background-image: url("../../assets/images/saleCardBg1.png");
+    }
+    &:nth-child(2) {
+        background-image: url("../../assets/images/saleCardBg2.png");
+    }
+    &:last-child {
+        background-image: url("../../assets/images/saleCardBg3.png");
+    }
 
     &-title {
         font-family: "Poppins";
@@ -19,7 +30,6 @@
         line-height: 150%;
         letter-spacing: 0.5px;
         color: #223263;
-        // width: 15%;
     }
 
     .oldPrice {

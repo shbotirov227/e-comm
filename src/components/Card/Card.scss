@@ -1,0 +1,42 @@
+.Card {
+    &-title {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 150%;
+        letter-spacing: 0.5px;
+        color: #223263;
+    }
+
+    &-price {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 180%;
+        letter-spacing: 0.5px;
+        color: #40BFFF;
+    }
+
+    &-oldPrice {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 150%;
+        letter-spacing: 0.5px;
+        text-decoration-line: line-through;
+        color: #9098B1;
+    }
+
+    &-persentage {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 150%;
+        letter-spacing: 0.5px;
+        color: #FB7181;
+    }
+}

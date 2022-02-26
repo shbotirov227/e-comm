@@ -2,16 +2,16 @@ import React from 'react';
 
 import "./SaleCard.scss";
 
-const SaleCard = () => {
+const SaleCard = ({title, newPrice, oldPrice, persentage}) => {
 	return (
 		<div className="SaleCard">
 			<div className="flex mb-100">
-				<h4 className="SaleCard-title">FS - QUILTED MAXI CROSS BAG</h4>
-				<h4 className="SaleCard-newPrice">$299,43</h4>
+				<h4 className="SaleCard-title">{title}</h4>
+				<h4 className="SaleCard-newPrice">{newPrice}</h4>
 			</div>
 			<div className="flex">
-				<span className="oldPrice">$534,33</span>
-				<span className="persentage">24% Off</span>
+				<span className="oldPrice">{oldPrice}</span>
+				<span className="persentage">{persentage}</span>
 			</div>
 		</div>
 	)
