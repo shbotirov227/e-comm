@@ -46,7 +46,26 @@
                 font-weight: normal;
                 font-size: 22px !important;
                 line-height: 33px;
+                border-bottom: 4px solid transparent;
+                transition: all ease 0.2s;
+                padding: 10px 10px 5px 10px;
+                margin: 0 10px;
+
+                &:hover {
+                    border-bottom: 4px solid #33A0FF;
+                }
             }
         }
+    }
+
+    &-cardsBtn {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        color: #33A0FF;
+        border-bottom: 3px solid #33A0FF;
+        text-align: center;
     }
 }

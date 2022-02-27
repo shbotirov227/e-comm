@@ -1,4 +1,35 @@
 .Card {
+    width: 300px;
+    margin-bottom: 40px;
+    border: 3px solid #F6F7F8;
+    border-radius: 10px;
+    position: relative;
+    box-sizing: border-box;
+    
+    img {
+        width: 100%;
+        height: 280px;
+    }
+
+    &-newProduct {
+        font-family: "Proxima Nova";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        color: #FFFFFF;
+        padding: 8px 15px;
+        background-color: #FF4858;
+        position: absolute;
+        border-radius: 5px;
+        top: 0;
+        left: 0;
+    }
+    
+    &-bottom {
+        border-top: none;
+    }
+
     &-title {
         font-family: "Poppins";
         font-style: normal;
@@ -28,6 +59,7 @@
         letter-spacing: 0.5px;
         text-decoration-line: line-through;
         color: #9098B1;
+        margin: 0 15px;
     }
 
     &-persentage {

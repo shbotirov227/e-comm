@@ -2,6 +2,8 @@ import React from "react";
 import Card from "../../components/Card/Card";
 import SaleCard from "../../components/SaleCard/SaleCard";
 import Header from "../../containers/Header/Header";
+import { data } from "../../data.js";
+
 
 import "./Home.scss";
 
@@ -53,7 +55,11 @@ const Home = () => {
 					<button className="HeaderBottom-link">Sunglasses</button>
 				</div>
 
-				<Card />
+				<div className="flex items-start justify-between flex-wrap">
+					{data.map(el => <Card key={el.id} img={el.img} title={el.title} price={el.price} oldPrice={el.oldPrice} persentage={el.persentage} />)}
+				</div>
+
+				<button className="Home-cardsBtn">LOAD MORE</button>
 			</div>
         </div>
     )
