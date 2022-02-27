@@ -59,6 +59,10 @@
     }
 
     &-cardsBtn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
         font-family: "Poppins";
         font-style: normal;
         font-weight: 500;
@@ -67,5 +71,96 @@
         color: #33A0FF;
         border-bottom: 3px solid #33A0FF;
         text-align: center;
+        margin-bottom: 150px;
+    }
+
+    .adidasSection {
+        background-color: #40BFFF;
+        margin-bottom: 100px;
+
+        img {
+            position: relative;
+            top: -110px;
+        }
+
+        &-title {
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 55px;
+            line-height: 82px;
+            color: #FFFFFF;
+            margin-bottom: 25px;
+        }
+
+        &-text {
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 36px;
+            color: #FFFFFF;
+            margin-bottom: 15px;
+        }
+
+        &-btn {
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 30px;
+            color: #FFFFFF;
+            position: relative;
+            &:hover::before {
+                width: 100%;
+            }
+            
+            &::before {
+                content: "";
+                position: absolute;
+                width: 65%;
+                height: 3px;
+                bottom: -5px;
+                background-color: #FFFFFF;
+                border-radius: 5px;
+                transition: all ease 0.4s;
+            }
+        }
+    }
+
+    .services {
+        margin-bottom: 120px;
+    }
+
+    .news {
+        margin-bottom: 110px;
+
+        .news-title {
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 34px;
+            line-height: 51px;
+            color: #22262A;
+            margin-bottom: 70px;
+        }
+    }
+
+    .feature {
+        margin-bottom: 130px;
+
+        &-title {
+            
+        }
+
+        &-item {
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 35px;
+            line-height: 52px;
+            color: #22262A;
+            margin-bottom: 75px;
+        }
     }
 }

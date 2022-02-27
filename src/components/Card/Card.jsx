@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import ReactStars from 'react-stars'
-
+import ReactStars from "react-stars";
 
 import "./Card.scss";
 

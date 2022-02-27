@@ -1,8 +1,19 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import Header from "../../containers/Header/Header";
 import Card from "../../components/Card/Card";
 import SaleCard from "../../components/SaleCard/SaleCard";
-import Header from "../../containers/Header/Header";
+import ServicesItem from "../../components/ServicesItem/ServicesItem";
+import NewsItem from "../../components/NewsItem/NewsItem";
+import FeatureItem from "../../components/FeatureItem/FeatureItem";
 import { data } from "../../data.js";
+import AdidasSectionImg from "../../assets/images/adidasSectionImg.png";
+import Nike from "../../assets/images/icons/nike.png";
+import Figma from "../../assets/images/icons/figma.png";
+import Img1 from "../../assets/images/icons/shipping.svg";
+import Img2 from "../../assets/images/icons/refund.svg";
+import Img3 from "../../assets/images/icons/support.svg";
+import FeatureImg from "../../assets/images/icons/featureImg.png";
 
 
 import "./Home.scss";
@@ -61,6 +72,43 @@ const Home = () => {
 
 				<button className="Home-cardsBtn">LOAD MORE</button>
 			</div>
+
+			<div className="adidasSection">
+				<div className="container flex items-center justify-between">
+					<div>
+						<h3 className="adidasSection-title">Adidas Men Running Sneakers</h3>
+						<p className="adidasSection-text">Performance and design. Taken right to the edge.</p>
+						<Link to="/" className="adidasSection-btn">SHOP NOW</Link>
+					</div>
+					<img src={AdidasSectionImg} alt="" />
+				</div>
+			</div>
+
+			<div className="services flex items-center justify-between">
+				<ServicesItem img={Img1} title="FREE SHIPPING" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry." />
+				<ServicesItem img={Img2} title="100% REFUND" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry." />
+				<ServicesItem img={Img3} title="SUPPORT 24/7" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry." />
+			</div>
+
+			<div className="news container">
+				<h3 className="news-title text-center">LATEST NEWS</h3>
+				<div className="flex items-start justify-between">
+					<NewsItem img={Nike} date="01 Jan, 2015" title="Fashion Industry" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry." />
+					<NewsItem img={Figma} date="01 Jan, 2015" title="Best Design Tools" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry." />
+					<NewsItem img={Nike} date="01 Jan, 2015" title="HR Community" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry." />
+				</div>
+			</div>
+
+			<div className="feature container">
+				<h4 className="feature-title text-center">FEATURED PRODUCTS</h4>
+
+				<div className="flex items-center justify-between">
+					<FeatureItem img={FeatureImg} title="Blue Swade Nike Sneakers" price="$499" oldPrice="$599" />
+					<FeatureItem img={FeatureImg} title="Blue Swade Nike Sneakers" price="$499" oldPrice="$599" />
+					<FeatureItem img={FeatureImg} title="Blue Swade Nike Sneakers" price="$499" oldPrice="$599" />
+				</div>
+			</div>
+			
         </div>
     )
 }

@@ -1,0 +1,28 @@
+.ServicesItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+    &-title {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 27px;
+        line-height: 40px;
+        color: #22262A;
+        margin: 50px 0 15px 0;
+    }
+
+    &-text {
+        width: 50%;
+        font-family: "Proxima Nova Rg";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        color: #22262A;
+    }
+}

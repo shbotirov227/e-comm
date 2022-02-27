@@ -1,0 +1,35 @@
+.NewsItem {
+    width: 25%;
+    img {
+        width: 50%;
+        margin-right: 20px;
+    }
+
+    &-date {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: #C1C8CE;
+    }
+
+    &-title {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 33px;
+        color: #22262A;
+        margin: 5px 0;
+    }
+
+    &-text {
+        font-family: "Proxima Nova Rg";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        color: #22262A;
+    }
+}

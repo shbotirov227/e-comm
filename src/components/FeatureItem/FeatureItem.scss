@@ -1,0 +1,41 @@
+.FeatureItem {
+    width: 30%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    img {
+        width: 150px;
+        height: 150px;
+        margin-right: 30px;
+    }
+
+    &-title {
+        font-family: "Proxima Nova Rg";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 27px;
+        color: #262626;
+        margin-bottom: 15px;
+    }
+
+    &-price {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        color: #FF4858;
+        margin-right: 10px;
+    }
+
+    &-oldPrice {
+        font-family: "Proxima Nova Rg";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+        color: #C1C8CE;
+    }
+}
