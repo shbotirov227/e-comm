@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Header from "../../containers/Header/Header";
+import Footer from "../../containers/Footer/Footer";
 import Card from "../../components/Card/Card";
 import SaleCard from "../../components/SaleCard/SaleCard";
 import ServicesItem from "../../components/ServicesItem/ServicesItem";
@@ -84,7 +85,7 @@ const Home = () => {
 				</div>
 			</div>
 
-			<div className="services flex items-center justify-between">
+			<div className="services flex items-center justify-between container">
 				<ServicesItem img={Img1} title="FREE SHIPPING" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry." />
 				<ServicesItem img={Img2} title="100% REFUND" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry." />
 				<ServicesItem img={Img3} title="SUPPORT 24/7" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry." />
@@ -108,6 +109,13 @@ const Home = () => {
 					<FeatureItem img={FeatureImg} title="Blue Swade Nike Sneakers" price="$499" oldPrice="$599" />
 				</div>
 			</div>
+
+			<div className="flex items-center justify-center container relative rounded-t-md">
+				<input type="text" placeholder="Search query..." className="Home-input" />
+				<button className="Home-btn">Search</button>
+			</div>
+
+			<Footer marginTop="100px" />
 			
         </div>
     )

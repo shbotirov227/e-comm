@@ -4,11 +4,10 @@ import ReactStars from "react-stars";
 
 import "./FeatureItem.scss";
 
-const FeatureItem = ({ title, price, oldPrice }) => {
+const FeatureItem = ({ img, title, price, oldPrice }) => {
     return (
         <Link to="/" className="FeatureItem">
-            <img src="" alt="" />
-
+            <img src={img} alt="" />
             <div>
                 <h4 className="FeatureItem-title">{title}</h4>
                 <ReactStars count={5} size={20} color2={'#ffd700'} className="mb-2" />

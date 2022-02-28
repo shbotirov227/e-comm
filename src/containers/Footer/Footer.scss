@@ -1,3 +1,60 @@
 .Footer {
-    
+    background: #BCDDFE;
+    padding: 150px 0 70px 0;
+
+    &-logo {
+        display: flex;
+        align-items: center;
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 27px;
+        color: #22262A;
+        margin-bottom: 15px;
+
+        svg {
+            margin-right: 10px;
+        }
+    }
+
+    &-title {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: #22262A;
+        margin-bottom: 20px;
+    }
+
+    &-text {
+        font-family: "Proxima Nova Rg";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 15px;
+        color: #22262A;
+        margin-bottom: 25px;
+    }
+
+    &-copyright {
+        padding-top: 30px;
+
+        &-text {
+            font-family: "Proxima Nova Rg";
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+            color: #C1C8CE;
+        }
+
+        img {
+            width: 40px;
+            height: 25px;
+            margin-left: 20px;
+            border-radius: 5px;
+        }
+    }
 }

@@ -1,0 +1,22 @@
+.FooterBottom {
+    &-title {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 27px;
+        color: #22262A;
+        margin-bottom: 30px;
+    }
+
+    &-link {
+        display: block;
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 21px;
+        color: #262626;
+        margin-bottom: 10px;
+    }
+}
