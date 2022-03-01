@@ -1,3 +1,25 @@
 .Dropdown {
-    
+    position: absolute;
+    bottom: -210px;
+    background: #FFFFFF;
+
+    &-title {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 33px;
+        color: #C1C8CE;
+        margin-bottom: 20px;
+    }
+
+    &-link {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: #262626;
+        margin-bottom: 10px;
+    }
 }

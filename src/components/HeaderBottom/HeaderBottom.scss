@@ -1,5 +1,4 @@
 .HeaderBottom {
-
     &-logo {
         display: flex;
         align-items: center;
@@ -9,13 +8,14 @@
         font-size: 18px;
         line-height: 27px;
         color: #22262A;
-
+        
         svg {
             margin-right: 10px;
         }
     }
     
     &-link {
+        position: relative;
         font-family: "Poppins";
         font-style: normal;
         font-weight: 500;
