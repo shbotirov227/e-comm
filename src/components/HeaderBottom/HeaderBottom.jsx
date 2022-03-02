@@ -27,7 +27,7 @@ const HeaderBottom = () => {
 					<li className="HeaderBottom-link"><Link to="/" onClick={func} onMouseLeave={func2}>BAGS</Link></li>
 					<li className="HeaderBottom-link"><Link to="/" onClick={func} onMouseLeave={func2}>SNEAKERS</Link></li>
 					<li className="HeaderBottom-link"><Link to="/" onClick={func} onMouseLeave={func2}>BELT</Link></li>
-					<li className="HeaderBottom-link"><Link to="/" onClick={func} onMouseLeave={func2}>CONTACT</Link></li>
+					<li className="HeaderBottom-link"><Link to="/contact" onClick={func} onMouseLeave={func2}>CONTACT</Link></li>
 				{
 					state === true ? <Dropdown title="dropdown" link={["Coporate Shoes", "Sneakers", "Sandals", "Sport Shoe", "Trainers"]} /> : undefined
 				}
