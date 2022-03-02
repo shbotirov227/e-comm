@@ -49,6 +49,8 @@
     .imgSection {
         width: 50%;
         height: 715px;
+        position: relative;
+        margin-right: 40px;
         background-color: #40BFFF;
         
         &-title {
@@ -76,7 +78,7 @@
 
         img {
             position: relative;
-            left: -150px;
+            left: -170px;
         }
     }
 }

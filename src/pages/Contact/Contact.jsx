@@ -11,12 +11,12 @@ const Contact = () => {
         <Header />
 
         <div className="container">
-			<div className="Contact-inner flex justify-between items-center relative">
+			<div className="Contact-inner flex items-center relative">
 				<div className="imgSection flex items-center" style={{padding: 50}}>
 					<div className="imgSection-img relative">
 						<img src={CallImg} alt="" className="absolute" />
 					</div>
-					<div className="">
+					<div className="absolute right-16">
 						<h4 className="imgSection-title">get in touch</h4>
 						<a className="imgSection-address" href="mailto:contact@e-comm.ng">contact@e-comm.ng</a>
 						<a className="imgSection-address" href="tel:+234 4556 6665 34">+234 4556 6665 34</a>
