@@ -23,7 +23,7 @@ const HeaderTop = () => {
 
                 <div className="flex align-center justify-end">
                     <Link to="/" className="HeaderTop-user"><UserIcon /> My profile</Link>
-                    <Link to="/" className="shoppingIcon"><ShoppingIcon /></Link>
+                    <Link to="/cart" className="shoppingIcon"><ShoppingIcon /></Link>
                     <span className="HeaderTop-user">Items <input type="text" placeholder="$0.00" /><SearchIcon /></span>
                 </div>
             </div>
