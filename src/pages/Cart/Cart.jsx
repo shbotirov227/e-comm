@@ -55,8 +55,8 @@ const Cart = () => {
 				Header: 'Name',
 				columns: [
 				{
-					Header: 'First Name',
-					accessor: 'firstName',
+					Header: 'Product',
+					accessor: 'product',
 				},
 				{
 					Header: 'Last Name',
@@ -73,16 +73,16 @@ const Cart = () => {
 					accessor: 'age',
 				},
 				{
-					Header: 'Visits',
-					accessor: 'visits',
+					Header: 'Price',
+					accessor: 'price',
 				},
 				{
-					Header: 'Status',
+					Header: 'QTY',
 					accessor: 'status',
 				},
 				{
-					Header: 'Profile Progress',
-					accessor: 'progress',
+					Header: 'UNIT PRICE',
+					accessor: 'unitPrice',
 				},
 				],
 			},

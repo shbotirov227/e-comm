@@ -9,19 +9,16 @@ const range = len => {
 }
 
 const newPerson = () => {
-  const statusChance = Math.random()
+  
+  const statusChance = false;
   return {
-    // firstName: namor.generate({ words: 1, numbers: 0 }),
+    product: "hello",
     // lastName: namor.generate({ words: 1, numbers: 0 }),
     age: Math.floor(Math.random() * 30),
-    visits: Math.floor(Math.random() * 100),
-    progress: Math.floor(Math.random() * 100),
+    price: Math.floor(Math.random() * 100),
+    unitPrice: Math.floor(Math.random() * 100),
     status:
-      statusChance > 0.66
-        ? 'relationship'
-        : statusChance > 0.33
-        ? 'complicated'
-        : 'single',
+      statusChance > false ? 'relationship' : undefined
   }
 }
 
