@@ -1,4 +1,68 @@
 .Payment1 {
     background: #FFFFFF;
     border-radius: 10px;
+    padding: 70px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 50%;
+    height: 50%;
+    background: #FFF;
+    border-radius: 10px;
+    position: fixed;
+    z-index: 9999;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+    &-title {
+        font-family: "Raleway";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 38px;
+        text-align: center;
+        text-transform: capitalize;
+        color: #40BFFF;
+        margin-bottom: 50px;
+    }
+
+    &-step {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Nunito";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 25px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: -0.02em;
+        color: #FFFFFF;
+        margin-right: 25px;
+        padding: 15px;
+        border-radius: 50%;
+        background: #DFDEDE;
+        width: 35px;
+        height: 35px;
+
+        &:first-child {
+            background: #40BFFF;
+            box-shadow: 0px 10px 40px rgba(248, 161, 112, 0.2);
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &-line {
+        height: 2px;
+        width: 120px;
+        background-color: #DFDEDE;
+        position: absolute;
+        z-index: -1;
+    }
 }

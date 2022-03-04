@@ -112,9 +112,16 @@ const Cart = () => {
 								{
 									open ? (
 										<div className="Payment1">
-											<div className="flex">
+											<div className="flex items-center justify-between ">
 												<button><Arrow /></button>
-												<button onClick={onclick}><Close /></button>
+												<button onClick={() => setOpen(false)}><Close /></button>
+											</div>
+											<h3 className="Payment1-title">Make Payment</h3>
+											<div className="flex items-center justify-center mb-10">
+												<h4 className="Payment1-step relative">1</h4>
+												<span className="Payment1-line"></span>
+												<h4 className="Payment1-step relative">2</h4>
+												<h4 className="Payment1-step">3</h4>
 											</div>
 										</div>
 									) : undefined
