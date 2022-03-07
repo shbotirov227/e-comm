@@ -2,13 +2,13 @@
     background: #FFFFFF;
     border-radius: 10px;
     padding: 70px;
-    top: 0;
-    bottom: 0;
+    top: 50px;
+    // bottom: 0;
     left: 0;
     right: 0;
     margin: auto;
     width: 50%;
-    height: 50%;
+    height: 80%;
     background: #FFF;
     border-radius: 10px;
     position: fixed;
@@ -64,5 +64,110 @@
         background-color: #DFDEDE;
         position: absolute;
         z-index: -1;
+    }
+
+    &-left {
+        width: 48%;
+
+        &__title {
+            font-family: "Raleway";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 23px;
+            display: flex;
+            align-items: flex-end;
+            text-transform: capitalize;
+            color: #40BFFF;
+            margin-bottom: 15px;
+        }
+
+        &__input {
+            font-family: "Nunito";
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 22px;
+            display: flex;
+            align-items: center;
+            letter-spacing: -0.02em;
+            color: #999999;
+            background: rgba(223, 222, 222, 0.3);
+            border-radius: 10px;
+            padding: 15px;
+            width: 380px;
+            border: none;
+            outline: none;
+            margin-bottom: 35px;
+            transition: all ease 0.4s;
+            border: 1px solid transparent;
+
+            &:focus {
+                border: 1px solid #33A0FF;
+            }
+        }
+
+        &__label {
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 150%;
+            letter-spacing: 0.5px;
+            color: #223263;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            padding: 20px;
+            transition: all ease 0.4s;
+            cursor: pointer;
+            border-radius: 4px;
+
+            &:hover {
+                background: #EBF0FF;
+            }
+
+            svg {
+                margin-right: 20px;
+            }
+
+            #bank {
+                border: 1px solid #DFDEDE;
+                box-sizing: border-box;
+                border-radius: 3px;
+                padding: 10px;
+            }
+        }
+    }
+
+    &-right {
+        widows: 48%;
+        textarea {
+            height: 125px;
+            resize: none;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+    }
+
+    .paymentBtn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Nunito";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 33px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: -0.02em;
+        color: #FFFFFF;
+        background: #33A0FF;
+        border-radius: 10px;
+        padding: 15px 30px;
     }
 }
