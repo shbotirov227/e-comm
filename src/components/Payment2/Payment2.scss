@@ -1,0 +1,131 @@
+.Payment2 {
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 50px;
+    top: 20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 50%;
+    height: 95%;
+    background: #FFF;
+    border-radius: 10px;
+    position: fixed;
+    z-index: 9999;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    &-step {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Nunito";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+        letter-spacing: -0.02em;
+        color: #FFFFFF;
+        margin-right: 25px;
+        padding: 15px;
+        border-radius: 50%;
+        background: #DFDEDE;
+        width: 35px;
+        height: 35px;
+
+        &:first-child, &:nth-child(3) {
+            background: #40BFFF;
+            box-shadow: 0px 10px 40px rgba(248, 161, 112, 0.2);
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &-left {
+        width: 45%;
+        background: linear-gradient(180deg, #9A9A9A 0%, #5A5A5A 100%);
+        border-radius: 10px;
+        padding: 20px 25px;
+        position: relative;
+
+        &:before {
+            content: "";
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            z-index: 333;
+            top: -45px;
+            left: -105px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        &__top {
+            margin-bottom: 50px;
+        }
+
+        &__bottom {
+            .cardInfo {
+                font-family: "Dosis";
+                font-style: normal;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 33px;
+                color: #FFFFFF;
+            }
+        }
+    }
+
+    &-right {
+        width: 43%;
+        .Payment2-saveCard {
+            input {
+                width: 20px;
+                height: 20px;
+                background: transparent;
+                cursor: pointer;
+            }
+            &__label {
+                font-family: "Nunito";
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 21px;
+                color: #999999;
+                margin-left: 10px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .paymentBtn {
+        width: 340px;
+        text-align: center;
+        position: relative;
+        left: 0;
+        right: 0;
+        margin: auto;
+        font-family: "Nunito";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 33px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        letter-spacing: -0.02em;
+        color: #FFFFFF;
+        background: #33A0FF;
+        border-radius: 10px;
+        padding: 15px 30px;
+        margin-top: 145px;
+    }
+
+}

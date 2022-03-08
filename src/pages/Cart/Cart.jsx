@@ -8,10 +8,11 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import Footer from "../../containers/Footer/Footer";
 import Header from "../../containers/Header/Header";
-import Payment1 from './../../components/Payment1/Payment1';
+import Payment1 from "../../components/Payment1/Payment1";
+import Payment2 from "../../components/Payment2/Payment2";
+import Payment3 from './../../components/Payment3/Payment3';
 import Img1 from "../../assets/images/saleCardBg3.png"
 import { MinusIcon, PlusIcon, X, Arrow, Close, PaymentIcon1, PaymentIcon2, PaymentIcon3 } from "../../assets/icons/icons";
-
 
 import "./Cart.scss";
 
@@ -29,7 +30,10 @@ const Cart = () => {
 
 	const [ state, setState ] = useState(1);
 	const [ price, setPrice ] = useState(499);
-	const [ open, setOpen ] = useState(false);
+	const [ open1, setOpen1 ] = useState(false);
+	const [ open2, setOpen2 ] = useState(false);
+	const [ open3, setOpen3 ] = useState(false)
+	const [ bgColor, setBgColor ] = useState(false);
 
 	const multiply = () => state + 1 ? setPrice(price + price) : undefined;
 	const division = () => state - 1 ? setPrice(price / 2) : undefined;
@@ -43,38 +47,35 @@ const Cart = () => {
 				<div className="Cart-inner">
 					<div className="Cart-tableStyles">
 						<TableContainer component={Paper}>
-							<Table sx={{ minWidth: 650 }} aria-label="simple table">
+							<Table style={{ table: { boxShadow: "none" } }} sx={{ minWidth: 650 }} aria-label="simple table">
 								<TableHead>
-								<TableRow>
-									<TableCell align="left" style={{width: "60%"}}>PRODUCT</TableCell>
-									<TableCell align="center" style={{width: "10%"}}>PRICE</TableCell>
-									<TableCell align="center" style={{width: "10%"}}>QTY</TableCell>
-									<TableCell align="right" style={{width: "10%"}}>UNIT PRICE</TableCell>
-								</TableRow>
+									<TableRow>
+										<TableCell align="left" className="theadTitle">PRODUCT</TableCell>
+										<TableCell align="right" style={{width: "20%"}} className="theadTitle">PRICE</TableCell>
+										<TableCell align="center" style={{width: "30%"}} className="theadTitle">QTY</TableCell>
+										<TableCell align="right" style={{width: "15%"}} className="theadTitle">UNIT PRICE</TableCell>
+									</TableRow>
 								</TableHead>
 								<TableBody>
-								{rows.map((row, index) => (
-									<TableRow key={row.index} sx={{ 'td, th': { border: 0 } }}>
-										<div className="flex items-center justify-between" style={{width: "100%"}}>
-											
-											<div className="flex items-center justify-between">
-												<X />
+									{rows.map((row, index) => (
+										<TableRow key={row.index} sx={{ 'td, th': { border: 0 } }}>
+											<TableCell className="images">
+												<div className="closeIcon"><X /></div>
 												<TableCell align="right">{row.img}</TableCell>
-												<TableCell align="left">{row.title}</TableCell>
-											</div>
+												<TableCell align="left" className="pricetitle">{row.title}</TableCell>
+											</TableCell>
 
-											<div className="flex justify-end">
-												<TableCell align="right">${price}</TableCell>
-												<div className="flex items-center justify-between" style={{width: "120px", background: "#F6F7F8"}}>
-													<button className="btnCounter" onClick={() => {minus(); division()}}><MinusIcon /></button>
-													<h5 className="btn-title">{state}</h5>
-													<button className="btnCounter" onClick={() => {multiply(); plus()}}><PlusIcon /></button>
-												</div>
-												<TableCell align="right">${row.unitPrice}</TableCell>
-											</div>
-										</div>
-									</TableRow>
-								))}
+											<TableCell align="right" className="pricetitle">${price}</TableCell>
+
+											<TableCell className="counters">
+												<button className="btnCounter" onClick={() => {minus(); division()}}><MinusIcon /></button>
+												<h5 className="btn-title">{state}</h5>
+												<button className="btnCounter" onClick={() => {multiply(); plus()}}><PlusIcon /></button>
+											</TableCell>
+
+											<TableCell align="center" className="pricetitle">${row.unitPrice}</TableCell>
+										</TableRow>
+									))}
 								</TableBody>
 							</Table>
 						</TableContainer>
@@ -90,7 +91,7 @@ const Cart = () => {
 							<div className="flex items-start justify-center flex-col" style={{borderBottom: "2px solid #F6F7F8"}}>
 								<div className="flex items-center justify-between w-[100%] mb-6">
 									<h5 className="subtotal">Subtotal</h5>
-									<span className="subtotal">$998</span>
+									<span className="subtotal">${price}</span>
 								</div>
 								<div className="flex items-center justify-between w-[100%] mb-6">
 									<h5 className="subtotal">Shipping fee</h5>
@@ -107,65 +108,13 @@ const Cart = () => {
 									<h3 className="total">TOTAL</h3>
 									<h3 className="total">$118</h3>
 								</div>
-								<button className="totalBtn" onClick={() => setOpen(true)}>Check out</button>
+								<button className="totalBtn" onClick={() => setOpen1(true)}>Check out</button>
 
-								{
-									open ? (
-										<div className="Payment1">
-											<div className="flex items-center justify-between ">
-												<button><Arrow /></button>
-												<button onClick={() => setOpen(false)}><Close /></button>
-											</div>
-											<h3 className="Payment1-title">Make Payment</h3>
-											<div className="flex items-center justify-center mb-10">
-												<h4 className="Payment1-step relative">1</h4>
-												<span className="Payment1-line"></span>
-												<h4 className="Payment1-step relative">2</h4>
-												<h4 className="Payment1-step">3</h4>
-											</div>
+								{ open1 ? <Payment1 onclickevent={() => setOpen1(false)} nextpage={() => {setOpen1(false); setOpen2(true)}} /> : undefined }
 
-											<div className="flex items-start justify-between w-[100%]">
-												<div className="Payment1-left">
-													<input type="text" placeholder="First Name" className="Payment1-left__input" />
-													<input type="email" name="email" placeholder="Email Address" className="Payment1-left__input" />
-													<h4 className="Payment1-left__title">Select Method of Payment</h4>
+								{ open2 ? <Payment2 onclickevent={() => setOpen2(false)} nextpage={() => {setOpen2(false); setOpen3(true)}} /> : undefined}
 
-													<label htmlFor="creditCard" className="Payment1-left__label">
-														<div className="flex items-center justify-between">
-															<PaymentIcon1 />
-															Credit Card Or Debit
-														</div>
-														<input type="checkbox" name="checkbox" id="creditCard" />
-													</label>
-
-													<label htmlFor="paypal" className="Payment1-left__label">
-														<div className="flex items-center justify-between">
-															<PaymentIcon2 />
-															Paypal
-														</div>
-														<input type="checkbox" name="checkbox" id="paypal" />
-													</label>
-													
-													<label htmlFor="bank" className="Payment1-left__label">
-														<div className="flex items-center justify-between">
-															<PaymentIcon3 />
-															Bank Transfer
-														</div>
-														<input type="checkbox" name="checkbox" id="bank" />
-													</label>	
-												</div>
-
-												<div className="Payment1-right">
-													<input type="text" placeholder="Last Name" className="Payment1-left__input" />
-													<textarea className="Payment1-left__input" name="textarea" placeholder="Address for Delivery"></textarea>
-													<input className="Payment1-left__input" type="number" name="numb" placeholder="Mobile Phone" />
-												</div>
-											</div>
-											
-											<button className="paymentBtn">Go to Payment</button>
-										</div>
-									) : undefined
-								}
+								{ open3 ? <Payment3 onclickevent={() => setOpen3(false)} nextpage={() => setOpen3(false)} /> : undefined }
 							</div>
 						</div>
 					</div>
