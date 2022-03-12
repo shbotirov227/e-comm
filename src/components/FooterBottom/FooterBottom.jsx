@@ -8,7 +8,7 @@ const FooterBottom = ({ title, link, path }) => {
         <div className="FooterBottom">
             <h4 className="FooterBottom-title">{title}</h4>
             <ul className="flex items-start justify-start flex-col">
-                {link.map(el => <li className="FooterBottom-link"><Link to={path}>{el}</Link></li>)}
+                {link.map((el, index) => <li key={index} className="FooterBottom-link"><Link to={path}>{el}</Link></li>)}
             </ul>
         </div>
     );

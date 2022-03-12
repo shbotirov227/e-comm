@@ -12,7 +12,7 @@ import Payment1 from "../../components/Payment1/Payment1";
 import Payment2 from "../../components/Payment2/Payment2";
 import Payment3 from './../../components/Payment3/Payment3';
 import Img1 from "../../assets/images/saleCardBg3.png"
-import { MinusIcon, PlusIcon, X, Arrow, Close, PaymentIcon1, PaymentIcon2, PaymentIcon3 } from "../../assets/icons/icons";
+import { MinusIcon, PlusIcon, X } from "../../assets/icons/icons";
 
 import "./Cart.scss";
 
@@ -33,7 +33,6 @@ const Cart = () => {
 	const [ open1, setOpen1 ] = useState(false);
 	const [ open2, setOpen2 ] = useState(false);
 	const [ open3, setOpen3 ] = useState(false)
-	const [ bgColor, setBgColor ] = useState(false);
 
 	const multiply = () => state + 1 ? setPrice(price + price) : undefined;
 	const division = () => state - 1 ? setPrice(price / 2) : undefined;

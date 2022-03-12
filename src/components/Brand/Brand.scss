@@ -1,0 +1,61 @@
+.Brand {
+    background: #F6F7F8;
+    padding: 20px;
+    border-radius: 6px;
+    margin-bottom: 30px;
+
+    &-title {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: #22262A;
+    }
+
+    &-btn {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        transition: all ease 0.4s;
+        margin-bottom: 20px;
+
+        &:hover {
+            .Brand-name, .Brand-num {
+                color: #33A0FF;
+            }
+        }
+    }
+
+    &-title {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: #22262A;
+        margin-bottom: 25px;
+    }
+
+    &-name {
+        font-family: 'Proxima Nova Rg';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: #262626;
+        transition: all ease 0.4s;
+    }
+
+    &-num {
+        font-family: 'Proxima Nova Rg';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: #22262A;
+        opacity: 0.35;
+        transition: all ease 0.4s;
+    }
+}
