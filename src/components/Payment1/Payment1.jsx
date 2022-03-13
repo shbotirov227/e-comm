@@ -1,12 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import { Arrow, Close, PaymentIcon1, PaymentIcon2, PaymentIcon3 } from "../../assets/icons/icons";
-import Payment2 from "../Payment2/Payment2";
-
 import "./Payment1.scss";
 
-
 const Payment1 = ({ onclickevent, nextpage }) => {
-
 	return (
 		<div className="Payment1">
 			<div className="flex items-center justify-between ">
@@ -33,7 +29,7 @@ const Payment1 = ({ onclickevent, nextpage }) => {
 							<PaymentIcon1 />
 							Credit Card Or Debit
 						</div>
-						<input type="checkbox" name="checkbox" id="creditCard" />
+						<input type="radio" name="check" value="creditCard" id="creditCard" />
 					</label>
 
 					<label htmlFor="paypal" className="Payment1-left__label">
@@ -41,7 +37,7 @@ const Payment1 = ({ onclickevent, nextpage }) => {
 							<PaymentIcon2 />
 							Paypal
 						</div>
-						<input type="checkbox" name="checkbox" id="paypal" />
+						<input type="radio" name="check" value="paypal" id="paypal" />
 					</label>
 					
 					<label htmlFor="bank" className="Payment1-left__label">
@@ -49,7 +45,7 @@ const Payment1 = ({ onclickevent, nextpage }) => {
 							<PaymentIcon3 />
 							Bank Transfer
 						</div>
-						<input type="checkbox" name="checkbox" id="bank" />
+						<input type="radio" name="check" value="bank" id="bank" />
 					</label>	
 				</div>
 

@@ -1,11 +1,5 @@
 import React, { useState } from "react";
-import Table from '@mui/material/Table';
-import TableBody from '@mui/material/TableBody';
-import TableCell from '@mui/material/TableCell';
-import TableContainer from '@mui/material/TableContainer';
-import TableHead from '@mui/material/TableHead';
-import TableRow from '@mui/material/TableRow';
-import Paper from '@mui/material/Paper';
+import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper} from "@mui/material";
 import Footer from "../../containers/Footer/Footer";
 import Header from "../../containers/Header/Header";
 import Payment1 from "../../components/Payment1/Payment1";
@@ -13,10 +7,10 @@ import Payment2 from "../../components/Payment2/Payment2";
 import Payment3 from './../../components/Payment3/Payment3';
 import Img1 from "../../assets/images/saleCardBg3.png"
 import { MinusIcon, PlusIcon, X } from "../../assets/icons/icons";
-
 import "./Cart.scss";
 
 const getimg = img => <img src={img} width="135" height="95" alt="" />
+
 const createData = (img, title, price, unitPrice) => {
 	return {img, title, price, unitPrice}
 };
@@ -26,8 +20,7 @@ const rows = [
 	createData(getimg(Img1), "Nike Airmax 270 react", 998, 499),
 ];
 
-const Cart = () => {
-
+const Cart = () => {	
 	const [ state, setState ] = useState(1);
 	const [ price, setPrice ] = useState(499);
 	const [ open1, setOpen1 ] = useState(false);
